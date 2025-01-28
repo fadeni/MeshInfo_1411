@@ -110,7 +110,7 @@ async def login(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text('Вы уже авторизованы.')
         return ConversationHandler.END
     else:
-        await update.message.reply_text('Пожалуйста, введите ваш логин:')
+        await update.message.reply_text('Пожалуйста, введите ваш номер телефона/почту/логин от mos.ru:')
         return USERNAME
 
 
